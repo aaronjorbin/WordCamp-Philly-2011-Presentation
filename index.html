@@ -1,1 +1,316 @@
-My GitHub Page
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Moving Beyond jQuery and into Javascript</title>
+	<meta name="viewport" content="width=1024">
+	
+	<!-- Replace path with correct path to deck.core.css. -->
+	<link rel="stylesheet" href="src/deck.js/core/deck.core.css" type="text/css">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="src/deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="src/css/prettify.css">
+	<link rel="stylesheet" href="src/css/deck.coder.css">
+	
+
+	<!-- Theme -->
+	<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+	<link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="src/codemirror/theme/default.css">
+	<!-- Replace path with correct path to Modernizr file. -->
+
+	<script src='src/jquery.min.js'></script>
+	<script src="src/modernizr.js"></script>
+</head>
+<body class="deck-container">
+<script type='text/coderdeck' id='coderdeck-style-example'>
+	<html>
+		<title>test</title>
+		<style>
+			CODE
+		</style>
+		<body>
+        <audio src="callpost.wav" autoplay="autoplay"></audio>
+		</body>
+	</html>
+</script> 	
+
+<article class='slide slide-subhead title'>
+<h1 class='override' >Moving Beyond jQuery and into Javascript</h1>
+<h2><a href='http://jorb.in/jsintro'>jorb.in/jsintro</a><br/>
+<a href='http://aaron.jorb.in/'>aaron.jorb.in</a><br/>
+<a href='http://twitter.com/aaronjorbin'>Aaron Jorbin</a>
+</h2>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>Javscript: A history</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>Mocha</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>jScript, JavaScript</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>ECMAScript</h1>
+</article>
+
+<article class='slide slide-subhead slide-section '>
+<h1 class='big override'>Basics</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small'  >Variables<br /><pre class='prettyprint'>var people = 1526006;</pre>Integers</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small' >Variables<br /><pre class='prettyprint'>var land = 135.1;</pre>Float</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small' >Variables<br /><pre class='prettyprint'>var nickname = 'Philly';</pre>String</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small' >Variables<br /><pre class='prettyprint'>var division= function(a,b){return a / b; };</pre>Functions</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small2' >Variables<br /><pre class='prettyprint'>var teams = ['Eagles', '76ers', 'Phillies', 'Flyers'];</pre>Arrays</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small2' >Variables<pre class='prettyprint'>var philidelphia ={
+   'population' : people, 
+   'squareMilesLand': Land,
+   'nickname': nickname,
+   'teams': teams};</pre>Objects</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='overridoe small2' ><pre class='prettyprint'>var density = division( philidelphia.population, philidelphia.squareMilesLand);</pre></h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='small'><pre class='prettyprint'>density === 11295.38119911177 // true</pre></h1>
+</article>
+
+<article class='slide slide-subhead slide-section '>
+<h1 class='big override'>Now What?</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>More then objects have methods</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small2' >var nickname = 'Philly';<pre class='prettyprint'>nickname.slice(2,6);</pre>illy</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small2' >var density = 11295.38119911177; <pre class='prettyprint'>density.toFixed(2);</pre>11295.38</h1>
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1>Variables Cascade down</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small2' ><pre class='prettyprint'>var dogfighting = 'bad';
+function vick(){
+    alert(dogfighting); // bad
+}
+</pre></h1>
+</article>
+<article class='slide slide-subhead'>
+<h1 class='override small2' ><pre class='prettyprint'>var passing = 'decent';
+function vick(){
+    passing = 'good';
+}
+
+vick(); // passing now is good
+</pre></h1>
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1 class='override small2'><pre class='prettyprint'>function vick(){
+    var passing = 'good';
+}
+alert(passing); // Passing isn't defined
+</pre></h1>
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1>Anonomous Self Executing Functions</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='small2 override'><pre class='prettyprint'>(function($){
+// Fun Stuff Goes Here    
+})(jQuery);</pre></h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>WordPress JavaScript API</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<img src='df.png' style='padding-top:20px;' >
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small'  >Current Behavior:  esc exits<br /><br />
+Desired Behavior: esc saves</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>Step 1: Get WordPress to output your script</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<pre class='prettyprint'>class Jorbin_DFV{
+    function __construct(){
+        add_action( 'admin_enqueue_scripts', array( $this , 'add_script' ) );
+    }
+
+    function add_script($hook){
+        if ('post.php' !== $hook && 'post-new.php' !== $hook)
+            return;
+
+        wp_enqueue_script( 'distractionFreeVim', plugins_url('dfv.js', __FILE__), array( 'wp-fullscreen' , ));
+    }
+
+}
+
+new Jorbin_DFV();</pre>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>Step 2: encapsilate our code</h1>
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1><pre class='prettyprint'>(function($){
+// Fun Stuff Goes Here    
+})(jQuery);</pre></h1>
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1 class='override small3'><pre class='prettyprint'>$(document).bind( 'wp_CloseOnEscape', function(e, data){ 
+    data.cb = function(e) { 
+        fullscreen.bounder( 'showToolbar', 'hideToolbar', 10000, e );  
+        fullscreen.save();
+    };   
+});</pre></h1> 
+</article>
+
+<article class='slide slide-subhead slide-section '>
+<h1 class='big override'>Pitfalls</h1>
+</article>
+<article class='slide slide-subhead'>
+<h1 class='override' style="padding-top:0.8em;">Race Conditions</h1>
+<div style='position:absolute;height:1px;left:-10000px;width:1px;top:-10000px;line-height:1px'>
+<textarea class='coder-editor coder-editor-instant' data-coder-template="coderdeck-style-example" data-language="html" style='visibility:hidden;' >
+</textarea>
+</div>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>Scope</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1>Browser Differences</h1>
+</article>
+
+<article class='slide slide-subhead slide-section '>
+<h1 class='big override'>Resources</h1>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small'>Mozilla Developer Network.</h1>
+<a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number' title='JavaScript Number Example: Using the Number object to assign values to numeric variables'><img src='http://static.jsconf.us/promotejsv.gif' height='280' width='160' alt='JavaScript Number Example: Using the Number object to assign values to numeric variables'/></a>
+</article>
+
+<article class='slide slide-subhead'>
+<h1><a href='http://eloquentjavascript.net/'>Elequent Javascript</a></h1>
+<h2>Free Book by Marijn Haverbeke</h2>
+</article>
+
+<article class='slide slide-subhead'>
+<h1 class='override small'><a href='https://github.com/tcorral/Design-Patterns-in-Javascript'>Design Patterns in JavaScript</a></h1>
+<h2>Examples from "Head First Design Patterns" in JavaScript</h2>
+</article>
+<article class='slide slide-subhead'>
+<h1 class='override small'><a href='http://2011.sf.wordcamp.org/session/javascript-unit-testing/'>Javscript unit testing</a></h1>
+<h2>WordCamp San Francisco 2011</h2>
+</article>
+
+<article class='slide slide-subhead title'>
+<h1 class='override' >Any Questions?</h1>
+<h2><a href='http://jorb.in/jsintro'>jorb.in/jsintro</a><br/>
+<a href='http://aaron.jorb.in/'>aaron.jorb.in</a><br/>
+<a href='http://twitter.com/aaronjorbin'>Aaron Jorbin</a>
+</h2>
+</article>
+
+<!-- Update these paths to point to the correct files. -->
+<script src="src/jquery.tmpl.min.js"></script>
+<script src="src/deck.js/core/deck.core.js"></script>
+
+<!-- Code Mirror -->
+<script src="src/codemirror/lib/codemirror.js"></script>
+<script src="src/codemirror/mode/xml/xml.js"></script>
+<script src="src/codemirror/mode/css/css.js"></script>
+<script src="src/codemirror/mode/javascript/javascript.js"></script>
+<script src="src/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="src/deck.js/extensions/status/deck.status.js"></script>
+<script src="src/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src='src/deck.coder.js'></script>
+<script src="src/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="src/deck.js/extensions/menu/deck.menu.js"></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');   
+        $(".slide-subhead h1").each( function(index, element){
+            /* Alignment.  3 rules */  
+            if ( (index +1) % 3 == 1%3)
+                $(element).addClass('right');
+            else if ( (index +1) % 3 == 2%3)
+                $(element).addClass('center');
+            else
+                $(element).addClass('left');
+            /* Color.  2 rules */
+            if ( (index +1) % 2 == 1%2)
+                $(element).addClass('violet');
+            else
+                $(element).addClass('red');
+              
+            /* vertical space */ 
+            if ( $(element).hasClass('override') === false )
+                $(element).css('padding-top',  0.75 + (2-0.75)*Math.random() + 'em' );
+        });
+	});
+</script>
+</body>
+</html>
